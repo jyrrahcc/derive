@@ -38,7 +38,7 @@
                     <a class="nav-link" href="aboutus.html">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="tourpackage.html">Tour Package</a>
+                    <a class="nav-link" href="tourpackage.html">Tour Package</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
@@ -56,29 +56,38 @@
         </section>
         <!-- Booking Form Section -->
         <section class="container py-5">
-            <h2 class="text-center mt-5 mb-4">Booking Form for Bali Surf Blitz: Ride the Waves</h2>
-            <p class="text-center">Get ready for an unforgettable adventure! Join our exclusive 3D/2N Bali Surf Blitz for only Php 24,816.00 per person. Limited slots available, so don't miss out on this amazing experience!</p>
+            <h2 class="text-center mb-4 text-primary">Book Your Bali Surf Blitz: Ride the Waves</h2>
+            <p class="text-center fs-5 text-muted mb-5">Join our exclusive 3D/2N Bali Surf Blitz for just Php 24,816.00 per person! Limited slots available—secure your adventure now.</p>
 
-            <form id="booking-form" class="bg-light p-4 rounded shadow">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
+            <form method="get" action="index.html" id="booking-form" class="bg-white p-5 rounded shadow-lg">
+                <div class="row g-4">
+                    <!-- Full Name -->
+                    <div class="col-md-6">
                         <label for="fullName" class="form-label">Full Name</label>
                         <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <!-- Email -->
+                    <div class="col-md-6">
                         <label for="email" class="form-label">Email Address</label>
                         <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">Please provide a valid email address.</div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <!-- Phone Number -->
+                    <div class="col-md-6">
                         <label for="phone" class="form-label">Phone Number</label>
                         <input type="tel" class="form-control" id="phone" placeholder="0917-123-4567" required>
+                        <div class="invalid-feedback">Please enter a valid phone number.</div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <!-- Number of Persons -->
+                    <div class="col-md-6">
                         <label for="numberOfPersons" class="form-label">Number of Persons</label>
                         <input type="number" class="form-control" id="numberOfPersons" min="1" placeholder="1" required>
+                        <div class="invalid-feedback">Please specify the number of persons.</div>
                     </div>
-                    <div class="col-md-12 mb-3">
-                        <h5 class="text-secondary">Payment Method</h5>
+                    <!-- Payment Method -->
+                    <div class="col-md-12">
+                        <label for="paymentMethod" class="form-label">Payment Method</label>
                         <select class="form-select" id="paymentMethod" required>
                             <option selected disabled value="">Choose a payment method...</option>
                             <option>Cash (PHP)</option>
@@ -86,51 +95,37 @@
                             <option>Bank Transfer</option>
                             <option>Cheque</option>
                         </select>
+                        <div class="invalid-feedback">Please select a payment method.</div>
                     </div>
-                    <div class="col-md-12 mb-3">
+                    <!-- Proof of Payment -->
+                    <div class="col-md-12">
                         <label for="paymentProof" class="form-label">Proof of Payment</label>
                         <input type="file" class="form-control" id="paymentProof" accept=".jpg,.jpeg,.png,.pdf" required>
-                        <small class="form-text text-muted">Please upload a screenshot or copy of your payment proof.</small>
+                        <small class="text-muted">Upload your payment proof (screenshot or copy).</small>
+                        <div class="invalid-feedback">Please upload proof of payment.</div>
                     </div>
-                    <div class="col-md-12 mb-3">
-                        <h5 class="text-secondary">Terms of Payment</h5>
-                        <ul>
-                            <li>Cash payments must be in Philippine Peso (PHP)</li>
-                            <li>E-wallet payments *provide proof of payment (screenshots)<br>
-                                Gcash/Maya 0923-874-8618 (DÈRIVE TRAVEL &amp; TOURS)
+                    <!-- Terms of Payment -->
+                    <div class="col-md-12">
+                        <h5 class="text-secondary mb-3">Terms of Payment</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Cash payments:</strong> Must be in PHP</li>
+                            <li><strong>E-wallet payments:</strong> Gcash/Maya 0923-874-8618</li>
+                            <li><strong>Bank Transfers:</strong>
+                                <ul>
+                                    <li>Metrobank - 2706548164926</li>
+                                    <li>BPI - 1072548946</li>
+                                    <li>PNB - 0001165395761948</li>
+                                    <li>Security Bank - 1084629485629</li>
+                                    <li>PSB - 201759365297</li>
+                                    <li>China Bank - 103986428</li>
+                                </ul>
                             </li>
-                            <li>Bank Transfers/Bank Deposits *provide proof of deposit/transfer/payment (photocopy/screenshots)</li>
-                            <ul>
-                                <li>Metropolitan Bank and Trust Company (Metrobank)<br>
-                                    Account Name: DÈRIVE TRAVEL &amp; TOURS<br>
-                                    Account Number: 2706548164926
-                                </li>
-                                <li>Bank of the Philippine Islands (BPI)<br>
-                                    Account Name: DÈRIVE TRAVEL &amp; TOURS<br>
-                                    Account Number: 1072548946
-                                </li>
-                                <li>Philippine National Bank (PNB)<br>
-                                    Account Name: DÈRIVE TRAVEL &amp; TOURS<br>
-                                    Account Number: 0001165395761948
-                                </li>
-                                <li>Security Bank<br>
-                                    Account Name: DÈRIVE TRAVEL &amp; TOURS<br>
-                                    Account Number: 1084629485629
-                                </li>
-                                <li>Philippine Savings Bank (PSB)<br>
-                                    Account Name: DÈRIVE TRAVEL &amp; TOURS<br>
-                                    Account Number: 201759365297
-                                </li>
-                                <li>China Banking Corporation (China Bank)<br>
-                                    Account Name: DÈRIVE TRAVEL &amp; TOURS<br>
-                                    Account Number: 103986428
-                                </li>
-                            </ul>
-                            <li>Cheque payments, payable to DÈRIVE TRAVEL &amp; TOURS</li>
+                            <li><strong>Cheque payments:</strong> Payable to DÈRIVE TRAVEL & TOURS</li>
                         </ul>
                     </div>
+                    <!-- Submit Button -->
                     <div class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-custom">Submit Booking</button>
+                        <button type="submit" class="btn btn-primary btn-lg px-5">Submit Booking</button>
                     </div>
                 </div>
             </form>
@@ -165,9 +160,36 @@
                     </section>                   
                 </section>
                 <section class="col-sm-6">
-                    <section>
-                        <h5>Quick Links</h5>
-                        <a href="#" class="footer-link">Contact Us</a>
+                    <h5 class="text-primary">Quick Links</h5>
+                    <section class="row m-0 p-0">
+                        <div class="mb-4 col-sm-3">
+                            <h6 class="text-secondary">General</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html" class="footer-link mb-5">Home</a></li>
+                                <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+                                <li><a href="tourpackage.html" class="footer-link">Tour Package</a></li>
+                                <li><a href="booking.html" class="footer-link">Booking</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 col-sm-4">
+                            <h6 class="text-secondary">About Us</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="aboutus.html#mission-vision" class="footer-link">Our Mission</a></li>
+                                <li><a href="aboutus.html#mission-vision" class="footer-link">Our Vision</a></li>
+                                <li><a href="aboutus.html#whychooseus" class="footer-link">Why Choose Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 col-sm-5">
+                            <h6 class="text-secondary">Tour Package</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="tourpackage.html#inclusions" class="footer-link">Inclusions</a></li>
+                                <li><a href="tourpackage.html#reminders" class="footer-link">Reminders and Exclusions</a></li>
+                                <li><a href="tourpackage.html#terms-conditions" class="footer-link">Terms and Conditions</a></li>
+                                <li><a href="tourpackage.html#cancellation-policy" class="footer-link">Cancellation Policy</a></li>
+                                <li><a href="tourpackage.html#payment" class="footer-link">Terms of Payment</a></li>
+                                <li><a href="tourpackage.html#costing" class="footer-link">Costing</a></li>
+                            </ul>
+                        </div>  
                     </section>
                 </section>
             </section>
