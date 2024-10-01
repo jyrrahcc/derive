@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Quicksand&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #0b5da7;
+    --secondary-color: #f0ec26;
+    --accent-color: #042454;
+    --light-color: #f4f4f4;
+    --dark-color: #151e15;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    max-width: 2000px;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Make the video cover the background */
+.video-background {
+    position: absolute;
+    top: -15vh;
+    z-index: -2;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Optional: Add an overlay for better text readability */
+.overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+}
+
+.partner {
+    height: 50px;
+}
+
+#high {
+    position: relative;
+    top: -70px;
+}
+
+.footer-link {
+    position: relative;
+    color: #000; /* Adjust the text color */
+    text-decoration: none; /* Remove the default underline */
+    font-weight: bold; /* Optional: make the font bold */
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjusts the position of the underline */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: var(--primary-color); /* Color of the underline */
+    transition: width 0.3s ease; /* Animation for the underline */
+}
+
+.footer-link:hover::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+.aboutus-cover {
+    background-image: url("src/bali.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.spacer {
+    display: block;
+    height: 97px;
+}
+
+.darkener {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.body {
+    position: relative;
+}
+
+.scrollspy-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f8f9fa;
+}
+
+.scrollspy-section {
+    padding: 50px 0;
+}
+
+ol {
+    counter-reset: list-counter; /* Reset the counter */
+    list-style: none; /* Remove default numbering */
+    padding-left: 0; /* Remove default padding */
+}
+
+ol li {
+    counter-increment: list-counter; /* Increment the counter */
+    margin-bottom: 10px; /* Space between items */
+}
+
+ol li::before {
+    content: counter(list-counter) ". "; /* Use the counter as content */
+    font-weight: bold; /* Make the numbering bold */
+    color: var(--primary-color); /* Change the color of the numbering */
+}
+
+.surf {
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.3));
+}
+
+.navhigh {
+    transition: background-color 0.3s; /* Smooth transition */
+}

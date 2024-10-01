@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="John Yrrah Cabiles">
+
+    <!-- Favicon and Styles -->
+    <link rel="icon" type="image/x-icon" href="src\icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Page Title -->
+    <title>Derive Travel &amp; Tours</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navhigh fixed-top navbar-expand-md navbar-dark border-primary">
+            <div class="container-fluid px-sm-5">
+              <a class="navbar-brand" href="/"><img class="logo" alt="Logo" title="Derive Travel and Tours" src="src/logo.png"/></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tourpackage.html">Tour Package</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn rounded-pill btn-warning text-light fw-bold">Book Now</button>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Video Background -->
+        <video id="bg-video" class="video-background" muted autoplay loop>
+            <source src="src/balivideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Optional Overlay -->
+        <div class="overlay"></div>
+        <section class="vh-100 container d-flex align-items-center">
+            <!-- Hero Content -->
+            <section class="text-light">
+                <h1 class="display-3 text-light">Explore Bali with DÈRIVE</h1>
+                <p>Your safety and satisfaction are our priorities.</p>
+                <a href="#packages" class="btn btn-primary">View Our Packages</a>
+            </section>
+        </section>
+
+        <section id="high">
+            <!-- Partners -->
+            <section id="partners" class="w-100 row p-0 m-0 align-items-center justify-content-around bg-white py-4">
+                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
+                    <img src="src/IATA.png" class="partner img-fluid" alt="IATA" title="IATA">
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
+                    <img src="src/philtoa.png" class="partner img-fluid" alt="PHILTOA" title="PHILTOA">
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
+                    <img src="src/PTAA.png" class="partner img-fluid" alt="PTAA" title="PTAA">
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
+                    <img src="src/DOT.jpg" class="partner img-fluid" alt="DOT" title="Department of Tourism">
+                </div>
+            </section>
+            <section class="bg-light">
+                <section class="container py-5">
+                    <section class="row">
+                        <section class="col-md-6">
+                            <h2 class="text-primary">WHY CHOOSE US?</h2>
+                            <p class="text-muted">We are a travel agency that offers a wide range of services to cater to your travel needs. We are committed to providing you with the best travel experience possible.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item border-0">
+                                    <i class="fas fa-check text-success me-2"></i>Quality Service Guaranteed
+                                </li>
+                                <li class="list-group item border-0">
+                                    <i class="fas fa-check text-success me-2"></i>Competitive Rates and Packages 
+                                </li>
+                                <li class="list-group item border-0">
+                                    <i class="fas fa-check text-success me-2"></i>Professional and Experienced Staff 
+                                </li>
+                                <li class="list-group item border-0">
+                                    <i class="fas fa-check text-success me-2"></i>24/7 Customer Support 
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="col-md-6">
+                            <img src="src/whyus.jpg" class="img-fluid" alt="Why Choose Us" title="Why Choose Us">
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section id="epic-travel" class="py-5 bg-light text-center">
+                <div class="container">
+                    <h2 class="mb-4 text-primary">EPIC TRAVEL WITH JUST A CLICK OF A BUTTON</h2>
+                    <div class="row">
+                        <!-- Online Booking Tool -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-plane-departure me-2"></i>Online Booking Tool</h4>
+                                    <p class="card-text">
+                                        We want to make things as easy for you as possible. With our online booking tool, check airline rates and availability in real-time, and book your ticket the same day. You can also browse hotels and resorts and book them online. Just like that!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Travel Registry -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-gift me-2"></i>Travel Registry</h4>
+                                    <p class="card-text">
+                                        On your special day, do you want an experience that lasts a lifetime? Sign up for our online Travel Registry and we’ll create a personalized page where family and friends can help send you to that dream holiday, whether it's for a wedding, honeymoon, anniversary, or birthday!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gift Certificate -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-gift me-2"></i>Gift Certificate</h4>
+                                    <p class="card-text">
+                                        Travel is the only thing you buy that makes you richer. Surprise friends and loved ones with the gift of travel! It’s a perfect present that you can't physically wrap, great for any occasion.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Travel Shop -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-shopping-cart me-2"></i>Travel Shop</h4>
+                                    <p class="card-text">
+                                        Looking for practical travel finds? Shop from our online travel shopping site and experience a shopping spree at your fingertips!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="services" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center mb-5">MORE OF OUR EXTENSIVE SERVICES</h2>
+                    <div class="row g-4">
+                        <!-- Corporate Travel Management -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="src/corporate-travel.jpg" class="card-img-top" alt="Corporate Travel Management">
+                                <div class="card-body">
+                                    <h4 class="card-title">Corporate Travel Management</h4>
+                                    <p class="card-text">
+                                        We are proud of our international affiliation with CWT™. Since 2012, we have been a representative of CWT’s Global Partner Network in the Philippines, optimizing ticketing capability and acquiring Global and Regional Clients.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Meetings & Events Management -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="src/meetings-events.jpg" class="card-img-top" alt="Meetings and Events Management">
+                                <div class="card-body">
+                                    <h4 class="card-title">Meetings & Events Management</h4>
+                                    <p class="card-text">
+                                        Our team specializes in incentive and group travel, events solutions, and events management. We also handle transport logistics, venue sourcing, and event secretariat services.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Travel Shop -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="src/travel-shop.jpg" class="card-img-top" alt="Travel Shop">
+                                <div class="card-body">
+                                    <h4 class="card-title">Travel Shop</h4>
+                                    <ul class="list-unstyled">
+                                        <li>• Gift Certificates: Purchase travel credits online.</li>
+                                        <li>• Souvenir Shop: Travel merchandise and souvenirs.</li>
+                                        <li>• Travel Registry: Pooled travel funds for special events.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Documentation Services -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="src/documentation-services.jpg" class="card-img-top" alt="Documentation Services">
+                                <div class="card-body">
+                                    <h4 class="card-title">Documentation Services</h4>
+                                    <p class="card-text">
+                                        Our Documentation Team processes visa requirements for the USA, Canada, Schengen territories, other European, Middle Eastern, and Asian countries, as well as passport processing and other services.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="why-choose-us" class="py-5 bg-white">
+                <div class="container">
+                    <h2 class="text-center mb-4">WHY CHOOSE US?</h2>
+                    <p class="text-center mb-5 text-muted">Explore our credentials and discover why we are your best choice for travel solutions.</p>
+                    <div class="row g-5">
+                        <!-- International Accreditations -->
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-stretch">
+                                <div class="flex-shrink-0">
+                                    <img src="src/iata-logo.png" alt="IATA" class="img-fluid" style="width: 80px; height: auto;">
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-0">International Accreditations</h5>
+                                    <p class="text-muted">As an IATA accredited agency, we adhere to the highest standards of the airline industry, ensuring safe and reliable travel for our clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Government Accreditation -->
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-stretch">
+                                <div class="flex-shrink-0">
+                                    <img src="src/dot-logo.png" alt="Department of Tourism" class="img-fluid" style="width: 80px; height: auto;">
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Government Accreditation</h5>
+                                    <p class="text-muted">Recognized by the Department of Tourism, we promote sustainable tourism practices while offering top-notch services.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-stretch mt-4">
+                                <div class="flex-shrink-0">
+                                    <img src="src/bi-logo.png" alt="Bureau of Immigration" class="img-fluid" style="width: 80px; height: auto;">
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Bureau of Immigration</h5>
+                                    <p class="text-muted">Our partnership with the Bureau of Immigration ensures seamless travel experiences, providing our clients with up-to-date immigration regulations and support.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Local Tourism Associations -->
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-stretch mt-4">
+                                <div class="flex-shrink-0">
+                                    <img src="src/ptaa-logo.png" alt="PTAA" class="img-fluid" style="width: 80px; height: auto;">
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Local Tourism Associations</h5>
+                                    <p class="text-muted">As a member of PTAA, we are part of a network of trusted agencies, ensuring quality services and value for our clients.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-stretch mt-4">
+                                <div class="flex-shrink-0">
+                                    <img src="src/philtoa-logo.png" alt="PHILTOA" class="img-fluid" style="width: 80px; height: auto;">
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Philippine Tour Operators Association (PHILTOA)</h5>
+                                    <p class="text-muted">Our affiliation with PHILTOA allows us to provide unique travel experiences, connecting you with reliable tour operators across the Philippines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+    </main>
+    <footer id="contact" class="bg-white border-top border-primary py-5">
+        <section class="container">
+            <section class="row m-0 p-0 w-100">
+                <section class="col-sm-6">
+                    <img class="logo mb-2" alt="Logo" title="Derive Travel and Tours" src="src/logo.png"/>
+                    <section>
+                        <section class="mb-2">
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-map-marker-alt"></i> Address:
+                            </p>
+                            <p class="ms-2 mb-0">#54 Francisco Building, Barangay Langkaan 1, <br/> Dasmariñas City, Cavite, 4114</p>
+                        </section>
+                        
+                        <section class="mb-2">
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-envelope"></i> Email:
+                            </p>
+                            <p class="ms-2 mb-0">derivetnt@gmail.com</p>
+                        </section>  
+                        
+                        <section class="mb-2">
+                            <p class="text-muted mb-2">
+                                <i class="fas fa-phone-alt"></i> Telephone No.:
+                            </p>
+                            <p class="ms-2 mb-0">(046) 484-88-20</p>
+                        </section>
+                    </section>                   
+                </section>
+                <section class="col-sm-6">
+                    <section>
+                        <h5>Quick Links</h5>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </section>
+                </section>
+            </section>
+            <hr class="border border-success" />
+            <section class="d-flex gap-2 flex-wrap justify-content-between">
+                <p>© 2024 Derive Travel &amp; Tours. All rights reserved.</p>
+                <p class="text-muted">Disclaimer: All media used on this website are for illustrative and educational purposes only.</p>
+            </section>
+        </section>
+        
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
