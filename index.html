@@ -23,7 +23,7 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navhigh fixed-top navbar-expand-md navbar-dark border-primary">
+        <nav class="navbar navhigh fade-down fixed-top navbar-expand-md navbar-dark border-primary">
             <div class="container-fluid px-sm-5">
               <a class="navbar-brand" href="/"><img class="logo" alt="Logo" title="Derive Travel and Tours" src="src/logo.png"/></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
                   </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn rounded-pill btn-warning text-light fw-bold">Book Now</button>
+                    <a href="booking.html" class="btn rounded-pill btn-warning text-light fw-bold">Book Now</a>
                 </div>
               </div>
             </div>
@@ -61,63 +61,39 @@
         <div class="overlay"></div>
         <section class="vh-100 container d-flex align-items-center">
             <!-- Hero Content -->
-            <section class="text-light">
+            <section class="text-light fade-left animate">
                 <h1 class="display-3 text-light">Explore Bali with DÈRIVE</h1>
-                <p>Your safety and satisfaction are our priorities.</p>
-                <a href="#packages" class="btn btn-primary">View Our Packages</a>
+                <p class="mb-3 lead">Your safety and satisfaction are our priorities.</p>
+                <a href="tourpackage.html" class="btn btn-primary">View Our Package</a>
             </section>
         </section>
 
         <section id="high">
             <!-- Partners -->
-            <section id="partners" class="w-100 row p-0 m-0 align-items-center justify-content-around bg-white py-4">
-                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
+            <section id="partners" class="w-100 fade animate row p-0 m-0 align-items-center justify-content-around bg-white py-4">
+                <div class="col-md-2 col-sm-6 col-12 p-3 text-center">
                     <img src="src/IATA.png" class="partner img-fluid" alt="IATA" title="IATA">
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
+                <div class="col-md-2 col-sm-6 col-12 p-3 text-center">
                     <img src="src/philtoa.png" class="partner img-fluid" alt="PHILTOA" title="PHILTOA">
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
+                <div class="col-md-2 col-sm-6 col-12 p-3 text-center">
                     <img src="src/PTAA.png" class="partner img-fluid" alt="PTAA" title="PTAA">
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 p-3 text-center">
-                    <img src="src/DOT.jpg" class="partner img-fluid" alt="DOT" title="Department of Tourism">
+                <div class="col-md-2 col-sm-6 col-12 p-3 text-center">
+                    <img src="src/boe.png" class="partner img-fluid" alt="IATA" title="IATA">
                 </div>
-            </section>
-            <section class="bg-light">
-                <section class="container py-5">
-                    <section class="row">
-                        <section class="col-md-6">
-                            <h2 class="text-primary">WHY CHOOSE US?</h2>
-                            <p class="text-muted">We are a travel agency that offers a wide range of services to cater to your travel needs. We are committed to providing you with the best travel experience possible.</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item border-0">
-                                    <i class="fas fa-check text-success me-2"></i>Quality Service Guaranteed
-                                </li>
-                                <li class="list-group item border-0">
-                                    <i class="fas fa-check text-success me-2"></i>Competitive Rates and Packages 
-                                </li>
-                                <li class="list-group item border-0">
-                                    <i class="fas fa-check text-success me-2"></i>Professional and Experienced Staff 
-                                </li>
-                                <li class="list-group item border-0">
-                                    <i class="fas fa-check text-success me-2"></i>24/7 Customer Support 
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="col-md-6">
-                            <img src="src/whyus.jpg" class="img-fluid" alt="Why Choose Us" title="Why Choose Us">
-                        </section>
-                    </section>
-                </section>
+                <div class="col-md-2 col-sm-6 col-12 p-3 text-center">
+                    <img src="src/DOT.png" class="partner img-fluid" alt="DOT" title="Department of Tourism">
+                </div>
             </section>
 
             <section id="epic-travel" class="py-5 bg-light text-center">
                 <div class="container">
-                    <h2 class="mb-4 text-primary">EPIC TRAVEL WITH JUST A CLICK OF A BUTTON</h2>
+                    <h2 class="mb-4 text-primary fade animate">EPIC TRAVEL WITH JUST A CLICK OF A BUTTON</h2>
                     <div class="row">
                         <!-- Online Booking Tool -->
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-lg-6 mb-4 fade-left animate">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body">
                                     <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-plane-departure me-2"></i>Online Booking Tool</h4>
@@ -128,7 +104,7 @@
                             </div>
                         </div>
                         <!-- Travel Registry -->
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-lg-6 mb-4 fade-right animate">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body">
                                     <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-gift me-2"></i>Travel Registry</h4>
@@ -139,7 +115,7 @@
                             </div>
                         </div>
                         <!-- Gift Certificate -->
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-lg-6 mb-4 fade-left animate">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body">
                                     <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-gift me-2"></i>Gift Certificate</h4>
@@ -151,7 +127,7 @@
                         </div>
                         <!-- Travel Shop -->
                         <div class="col-lg-6 mb-4">
-                            <div class="card h-100 shadow-sm border-0">
+                            <div class="card fade-right animate h-100 shadow-sm border-0">
                                 <div class="card-body">
                                     <h4 class="card-title mb-3 text-primary"><i class="text-warning fas fa-shopping-cart me-2"></i>Travel Shop</h4>
                                     <p class="card-text">
@@ -164,127 +140,168 @@
                 </div>
             </section>
 
+            <!-- More of Our Extensive Services Section -->
+            <section class="py-5 bg-warning text-light">
+                <div class="container">
+                    <h2 class="mb-5 text-center text-primary">More of Our Extensive Services</h2>
+                
+                    <!-- Carousel -->
+                    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                
+                        <!-- Slide 1: Corporate Travel Management -->
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="src/corporate.png" class="img-fluid rounded" alt="Corporate Travel Management">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="text-primary">Corporate Travel Management</h3>
+                                <p>We are proud to be an international affiliate of CWT™, representing their Global Partner Network in the Philippines since 2012. This partnership has enhanced our ticketing capabilities and enabled us to serve Global and Regional Clients with utmost efficiency.</p>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <!-- Slide 2: Meetings &amp; Events Management -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="src/meeting.png" class="img-fluid rounded" alt="Meetings and Events Management">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="text-primary">Meetings &amp; Events Management</h3>
+                                <p>Our specialized Meetings &amp; Events Team delivers full-service event solutions. From incentive and group travel to venue sourcing and event logistics, we manage it all with attention to detail and seamless execution.</p>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <!-- Slide 3: Travel Shop -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="src/travelshop.jpg" class="img-fluid rounded" alt="Travel Shop">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="text-primary">Travel Shop</h3>
+                                <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success"></i> Gift Certificates - Purchase travel credits online.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Souvenir Shop - Find travel merchandise like bags, kits, and accessories.</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Travel Registry - Collect funds for a travel gift for special occasions like weddings or graduations.</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <!-- Slide 4: Documentation Services -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="src/documentation.png" class="img-fluid rounded" alt="Documentation Services">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="text-primary">Documentation Services</h3>
+                                <p>Our dedicated team offers professional assistance in visa processing for various countries, including the USA, Canada, Europe, and Asia. We also handle passport renewals and other travel-related documentation needs, ensuring a hassle-free process for our clients.</p>
+                            </div>
+                            </div>
+                        </div>
+                
+                        </div>
+                
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
 
-            <section id="services" class="py-5 bg-light">
-                <div class="container">
-                    <h2 class="text-center mb-5">MORE OF OUR EXTENSIVE SERVICES</h2>
-                    <div class="row g-4">
-                        <!-- Corporate Travel Management -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="src/corporate-travel.jpg" class="card-img-top" alt="Corporate Travel Management">
-                                <div class="card-body">
-                                    <h4 class="card-title">Corporate Travel Management</h4>
-                                    <p class="card-text">
-                                        We are proud of our international affiliation with CWT™. Since 2012, we have been a representative of CWT’s Global Partner Network in the Philippines, optimizing ticketing capability and acquiring Global and Regional Clients.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Meetings & Events Management -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="src/meetings-events.jpg" class="card-img-top" alt="Meetings and Events Management">
-                                <div class="card-body">
-                                    <h4 class="card-title">Meetings & Events Management</h4>
-                                    <p class="card-text">
-                                        Our team specializes in incentive and group travel, events solutions, and events management. We also handle transport logistics, venue sourcing, and event secretariat services.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Travel Shop -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="src/travel-shop.jpg" class="card-img-top" alt="Travel Shop">
-                                <div class="card-body">
-                                    <h4 class="card-title">Travel Shop</h4>
-                                    <ul class="list-unstyled">
-                                        <li>• Gift Certificates: Purchase travel credits online.</li>
-                                        <li>• Souvenir Shop: Travel merchandise and souvenirs.</li>
-                                        <li>• Travel Registry: Pooled travel funds for special events.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Documentation Services -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="src/documentation-services.jpg" class="card-img-top" alt="Documentation Services">
-                                <div class="card-body">
-                                    <h4 class="card-title">Documentation Services</h4>
-                                    <p class="card-text">
-                                        Our Documentation Team processes visa requirements for the USA, Canada, Schengen territories, other European, Middle Eastern, and Asian countries, as well as passport processing and other services.
-                                    </p>
+            <!-- Embassy Accreditation Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="mb-5 fade animate">
+            <h2 class="mb-2 text-center text-primary">Embassy Accreditation</h2>
+            <p class="lead text-center">As a trusted partner with embassies like Japan, Singapore, and Korea, Derive Travel &amp; Tours ensures seamless visa processing and exceptional travel support for your international journeys.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="accordion" id="embassyAccreditationAccordion">
+
+                    <!-- Embassy of Japan -->
+                    <div class="accordion-item mb-3 fade-up animate">
+                        <h2 class="accordion-header" id="headingJapan">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJapan" aria-expanded="false" aria-controls="collapseJapan">
+                                <span class="me-3"><i class="fas fa-flag text-primary"></i></span>
+                                Embassy of Japan
+                            </button>
+                        </h2>
+                        <div id="collapseJapan" class="accordion-collapse collapse" aria-labelledby="headingJapan" data-bs-parent="#embassyAccreditationAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img src="src/japan.jpg" class="img-fluid rounded" alt="Embassy of Japan" title="Embassy of Japan">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>At Derive Travel &amp; Tours, we are honored to be one of only six accredited agencies under Category A with the Embassy of Japan. This prestigious accreditation reflects our commitment to excellence in providing seamless visa processing services for our clients. With this trusted partnership, your journey to Japan is in safe and capable hands, ensuring that you experience everything from cherry blossoms to cutting-edge technology with peace of mind.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="why-choose-us" class="py-5 bg-white">
-                <div class="container">
-                    <h2 class="text-center mb-4">WHY CHOOSE US?</h2>
-                    <p class="text-center mb-5 text-muted">Explore our credentials and discover why we are your best choice for travel solutions.</p>
-                    <div class="row g-5">
-                        <!-- International Accreditations -->
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-stretch">
-                                <div class="flex-shrink-0">
-                                    <img src="src/iata-logo.png" alt="IATA" class="img-fluid" style="width: 80px; height: auto;">
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="mb-0">International Accreditations</h5>
-                                    <p class="text-muted">As an IATA accredited agency, we adhere to the highest standards of the airline industry, ensuring safe and reliable travel for our clients.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Government Accreditation -->
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-stretch">
-                                <div class="flex-shrink-0">
-                                    <img src="src/dot-logo.png" alt="Department of Tourism" class="img-fluid" style="width: 80px; height: auto;">
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="mb-0">Government Accreditation</h5>
-                                    <p class="text-muted">Recognized by the Department of Tourism, we promote sustainable tourism practices while offering top-notch services.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-stretch mt-4">
-                                <div class="flex-shrink-0">
-                                    <img src="src/bi-logo.png" alt="Bureau of Immigration" class="img-fluid" style="width: 80px; height: auto;">
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="mb-0">Bureau of Immigration</h5>
-                                    <p class="text-muted">Our partnership with the Bureau of Immigration ensures seamless travel experiences, providing our clients with up-to-date immigration regulations and support.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Local Tourism Associations -->
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-stretch mt-4">
-                                <div class="flex-shrink-0">
-                                    <img src="src/ptaa-logo.png" alt="PTAA" class="img-fluid" style="width: 80px; height: auto;">
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="mb-0">Local Tourism Associations</h5>
-                                    <p class="text-muted">As a member of PTAA, we are part of a network of trusted agencies, ensuring quality services and value for our clients.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-stretch mt-4">
-                                <div class="flex-shrink-0">
-                                    <img src="src/philtoa-logo.png" alt="PHILTOA" class="img-fluid" style="width: 80px; height: auto;">
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="mb-0">Philippine Tour Operators Association (PHILTOA)</h5>
-                                    <p class="text-muted">Our affiliation with PHILTOA allows us to provide unique travel experiences, connecting you with reliable tour operators across the Philippines.</p>
+
+                    <!-- Embassy of the Republic of Singapore -->
+                    <div class="accordion-item mb-3 fade-up animate">
+                        <h2 class="accordion-header" id="headingSingapore">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSingapore" aria-expanded="false" aria-controls="collapseSingapore">
+                                <span class="me-3"><i class="fas fa-flag text-primary"></i></span>
+                                Embassy of the Republic of Singapore
+                            </button>
+                        </h2>
+                        <div id="collapseSingapore" class="accordion-collapse collapse" aria-labelledby="headingSingapore" data-bs-parent="#embassyAccreditationAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img src="src/singapore.jpg" class="img-fluid rounded" alt="Embassy of Singapore" title="Embassy of Singapore">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>We are one of only two travel agencies in the Philippines accredited by the Embassy of the Republic of Singapore. This partnership allows us to provide you with streamlined visa processing, ensuring that your travels to the Lion City are stress-free. From the awe-inspiring Marina Bay Sands to the vibrant streets of Chinatown, Singapore is a treasure waiting to be explored — and we’re here to help you every step of the way.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Embassy of Korea -->
+                    <div class="accordion-item mb-3 fade-up animate">
+                        <h2 class="accordion-header" id="headingKorea">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKorea" aria-expanded="false" aria-controls="collapseKorea">
+                                <span class="me-3"><i class="fas fa-flag text-primary"></i></span>
+                                Embassy of Korea
+                            </button>
+                        </h2>
+                        <div id="collapseKorea" class="accordion-collapse collapse" aria-labelledby="headingKorea" data-bs-parent="#embassyAccreditationAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img src="src/korea.jpg" class="img-fluid rounded" alt="Embassy of Korea" title="Embassy of Korea">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Among only 10 agencies designated for group visa filing with the Embassy of Korea, DÈRIVE TRAVEL &amp; TOURS is also one of 35 trusted agencies for individual visas. This accreditation reflects our deep-rooted relationship with Korea, where tradition and modernity coexist. Whether you’re dreaming of wandering through Seoul’s vibrant cityscape or exploring the serene temples of Jeju Island, we’ll ensure your visa is handled with care and professionalism.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
-            
+            </div>
+        </div>
+    </div>
+</section>
         </section>
     </main>
     <footer id="contact" class="bg-white border-top border-primary py-5">
@@ -317,8 +334,11 @@
                 </section>
                 <section class="col-sm-6">
                     <section>
-                        <h5>Quick Links</h5>
-                        <a href="#" class="footer-link">Contact Us</a>
+                        <h5 class="text-primary">Quick Links</h5>
+                        <section>
+                            <a href="#" class="footer-link">Home</a>
+                            <a href="#" class="footer-link">Home</a>
+                        </section>
                     </section>
                 </section>
             </section>

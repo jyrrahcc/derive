@@ -32,3 +32,58 @@ window.onscroll = function() {
         nav.classList.remove('border-bottom');
     }
 };
+
+    let observer;
+    function handleIntersect(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target.dataset.animated !== 'true') {
+            triggerAnimation(entry.target);
+            entry.target.dataset.animated = 'true';
+          }
+        } else {
+          entry.target.dataset.animated = 'false';
+        }
+      });
+    }
+
+    function triggerAnimation(element) {
+      if (element.classList.contains('fade-down')) {
+        element.classList.remove('fade-down');
+        void element.offsetWidth;
+        element.classList.add('fade-down');
+      } else if (element.classList.contains('fade-right')) {
+        element.classList.remove('fade-right');
+        void element.offsetWidth;
+        element.classList.add('fade-right');
+      } else if (element.classList.contains('fade-left')) {
+        element.classList.remove('fade-left');
+        void element.offsetWidth;
+        element.classList.add('fade-left');
+      } else if (element.classList.contains('fade-up')) {
+        element.classList.remove('fade-up');
+        void element.offsetWidth;
+        element.classList.add('fade-up');
+      } else {
+        element.classList.remove('fade');
+        void element.offsetWidth;
+        element.classList.add('fade');
+      }
+    }
+
+    function setupIntersectionObserver() {
+      const elements = document.querySelectorAll('.animate');
+      const options = {
+        root: null,
+        rootMargin: '80px',
+        threshold: 0.1
+      };
+
+      observer = new IntersectionObserver(handleIntersect, options);
+
+      elements.forEach(element => {
+        observer.observe(element);
+      });
+    }
+    
+    document.addEventListener('DOMContentLoaded', setupIntersectionObserver);
